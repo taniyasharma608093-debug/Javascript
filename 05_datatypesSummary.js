@@ -45,3 +45,24 @@ array => object
 object => object
 function => function / function object
 */
+
+//Stack(primitive) => copy , Heap(non-primitve) => reference
+
+let myYoutubeName = "Taniya Sharma"
+
+let anothername = myYoutubeName
+anothername = "Dance By Tanu"
+
+console.log(myYoutubeName)
+console.log(anothername)
+
+let userOne = {
+    email: "taniya@google.com",
+    upi: "upi1234@ybl"
+}
+let userTwo = userOne;
+userTwo.email = "tanu@123"
+
+console.log(userOne)
+console.log(userTwo)
+
